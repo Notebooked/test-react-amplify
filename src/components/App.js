@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 import Navbar from "./Navbar"
@@ -17,9 +16,9 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path = "*" element={ <NotFound/> } />
-        <Route exact path="/" element={ <Home/> } />
-        <Route path="/about" element={ <About/> } />
+        <Route path = "*" element = { <NotFound/> } />
+        <Route exact path="/" element = { <Home/> } />
+        <Route path="/about" element = { <About/> } />
       </Routes>
     </Router>
   )
