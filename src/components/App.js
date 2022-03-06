@@ -5,9 +5,12 @@ import {
   Route,
 } from "react-router-dom";
 
+import {withAuthenticator} from '@aws-amplify/ui-react'
+
 import Navbar from "./Navbar"
 import Home from "./Home"
 import About from "./About"
+import Login from "./Login"
 import NotFound from "./NotFound"
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
         <Route path = "*" element = { <NotFound/> } />
         <Route exact path="/" element = { <Home/> } />
         <Route path="/about" element = { <About/> } />
+        <Route path="/login" element = { <Login/> } />
       </Routes>
     </Router>
   )
